@@ -1,0 +1,45 @@
+{
+  "name": "jobify",
+  "version": "0.1.0",
+  "description": "Self-hosted Application Platform for companies.",
+  "main": "index.js",
+  "repository": "git@githubcom:simonmaribo/jobify.git",
+  "author": "simonmaribo <simonmaribo@outlook.dk>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon dev",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production node index.js"
+  },
+  "dependencies": {
+    "@mantine/core": "^4.0.4",
+    "@mantine/dates": "^4.0.4",
+    "@mantine/dropzone": "^4.0.4",
+    "@mantine/form": "^4.0.4",
+    "@mantine/hooks": "^4.0.4",
+    "@mantine/modals": "^4.0.4",
+    "@mantine/next": "^4.0.4",
+    "@mantine/notifications": "^4.0.4",
+    "@mantine/prism": "^4.0.4",
+    "@mantine/rte": "^4.0.4",
+    "@mantine/spotlight": "^4.0.4",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.11.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.4.1",
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
