@@ -1,0 +1,14 @@
+{
+    "_id": "6232455e122fd8bd2cc0a124",
+    "title": "Junior Supporter",
+    "location": "Remote",
+    "description": "Rich Text Editor til at lave avanceret beskrivelse",
+    "fields": [
+        {
+            "id": 1,
+            "location": 1,
+            "title": "What is your name?",
+            "type": "textarea/text/number/file"
+        }
+    ]
+}
