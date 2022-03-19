@@ -3,9 +3,9 @@ import { Box, Text } from "@mantine/core";
 import { IoLocationSharp } from 'react-icons/io5'
 import { FaChevronRight } from 'react-icons/fa'
 
-export default function JobCard({title, description, location}){
+export default function JobCard({title, description, location, category, id}){
     return (
-        <Box component="a" href="" sx={{
+        <Box component="a" href={`/jobs/${id}`} sx={{
             display: 'flex',
             gap: 55,
             flexDirection: 'row',
@@ -21,7 +21,7 @@ export default function JobCard({title, description, location}){
             }
         }}>
             <Box>
-                <Text sx={{ color: '#0D101D', fontSize: 20, fontWeight: 600 }}>{title}</Text>
+                <Text sx={{ color: '#0D101D', fontSize: 20, fontWeight: 600 }}>{category} - {title}</Text>
                 <Text sx={{ color: '#0D101D', opacity: 0.8 }}>{description}</Text>
                 <Box sx={{ display: 'flex', marginTop: 20, gap: 3 }}>
                     <IoLocationSharp/>

@@ -1,4 +1,4 @@
-const config = require('./config');
+const config = require('./backend.config');
 
 const Server = require('./app/server')
 const { MongoClient } = require('mongodb');

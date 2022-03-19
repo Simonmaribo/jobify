@@ -26,6 +26,7 @@ class NextjsExpressRouter {
             else if (pathArr[j] != 'index.js') 
               baseName += `${`${pathArr[j]}`.replace('.js', '')}/`;
         }
+
         var route = await require(`.${path}`)(this.next, this.database);
         this.express.use(baseName, route);
 

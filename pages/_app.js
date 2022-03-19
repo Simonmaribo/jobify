@@ -1,6 +1,10 @@
 import { MantineProvider } from '@mantine/core';
 
+import { QueryClientProvider, QueryClient } from 'react-query';
+
 import '../styles/globals.css';
+
+const queryClient = new QueryClient();
 
 export default function App(props) {
   const { Component, pageProps } = props;
@@ -20,7 +24,9 @@ export default function App(props) {
           }
         }}
       >
-        <Component {...pageProps} />
+        <QueryClientProvider client={queryClient}>
+          <Component {...pageProps} />
+        </QueryClientProvider>
       </MantineProvider>
     </>
   );
