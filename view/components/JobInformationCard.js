@@ -1,4 +1,4 @@
-import { Box } from "@mantine/core";
+import { Box, Text } from "@mantine/core";
 
 export default function JobInformationCard({data}){
     return (
@@ -12,11 +12,8 @@ export default function JobInformationCard({data}){
             backgroundColor: '#fff',
             borderRadius: 5,
             padding: '1.5rem',
-            transition: 'all 200ms ease-in-out',
-            '&:hover': {
-                backgroundColor: '#f5f5f5',
-            }
-         }}>
+        }}>
+            <Text>{data.title}</Text>
         </Box>
     )  
 }

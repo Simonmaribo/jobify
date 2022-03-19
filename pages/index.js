@@ -7,11 +7,7 @@ export default function Home() {
     <DefaultLayout>
       <div style={{ minHeight: 1000, backgroundColor: 'rgb(248, 249, 250)' }}>
         <Header/>
-        <div style={{ display: 'flex', backgroundColor: 'rgb(248, 249, 250)'}}>
-          <div>
-            <JobList/>
-          </div>
-        </div>
+        <JobList/>
       </div>
     </DefaultLayout>
   )
