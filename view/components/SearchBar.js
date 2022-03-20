@@ -27,10 +27,6 @@ export default function SearchBar({data, onSearch}){
                 justifyContent: 'center',
                 alignContent: 'center',
                 gap: 10,
-                backgroundColor: '#fff',
-                border: '1px solid rgb(233, 236, 239)',
-                borderRadius: 5,
-                padding: '1rem'
             }}>
                 <Select
                     placeholder='Location'

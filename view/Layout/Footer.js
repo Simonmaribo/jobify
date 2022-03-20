@@ -2,7 +2,7 @@ import { Anchor, Box, Divider, Text, Container } from "@mantine/core";
 
 export default function Footer(){
     return (
-        <Box sx={{ backgroundColor: 'rgb(248, 249, 250)' }}>
+        <Box sx={{ backgroundColor: 'rgb(248, 249, 250)', bottom: 0, position: 'relative', width: '100%' }}>
             <Divider size={"xs"} ml={ 16 } mr={ 16 }/>
             <Container size='xl' sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1rem' }}>
                 <Text>

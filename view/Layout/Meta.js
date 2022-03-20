@@ -21,7 +21,7 @@ const Meta = ({ title, keywords, description }) => {
 }
 
 Meta.defaultProps = {
-  title: 'Jobify - Career Page',
+  title: 'Jobify - Open Positions',
   keywords: 'jobify',
   description: 'Self-hosted Application Platform for companies. ',
 }
